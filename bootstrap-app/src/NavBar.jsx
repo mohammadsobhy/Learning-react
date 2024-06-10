@@ -4,16 +4,23 @@ import Navbar from "react-bootstrap/Navbar";
 
 function NavBar() {
 	return (
-		<Navbar expand="lg" className="navbar-dark bg-dark fixed-top float-end">
-			<Container className="">
-				<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav d-flex justify-content-end">
-					<Nav className="">
-						<Nav.Link href="#home">Home</Nav.Link>
-						<Nav.Link href="#link">Link 1</Nav.Link>
-						<Nav.Link href="#link">Link 2</Nav.Link>
-						<Nav.Link href="#link">Link 3</Nav.Link>
+		<Navbar bg="dark" variant="primary" expand="lg">
+			<Container>
+				<Navbar.Brand href="#" className="text-white">
+					Logo
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls="navbar-nav" />
+				<Navbar.Collapse id="navbar-nav">
+					<Nav className="ms-auto">
+						<Nav.Link href="#link1" className="text-white">
+							Link 1
+						</Nav.Link>
+						<Nav.Link href="#link2" className="text-white">
+							Link 2
+						</Nav.Link>
+						<Nav.Link href="#link3" className="text-white">
+							Link 3
+						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
