@@ -3,12 +3,25 @@
 }
 
 .container.parent-div {
+	width: 100%;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+
 	align-items: center;
-	align-self: center;
+
 	font-family: cursive;
+}
+
+.buttonsGroup {
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
 }
 
 button {
