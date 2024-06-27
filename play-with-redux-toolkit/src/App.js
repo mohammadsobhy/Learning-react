@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
+//mo7amedabdel3aziz@gmail.com
 
 function App() {
-	const counter = useSelector((state) => state.counterReducer.counter);
+	const counter = useSelector((state) => state.counter);
 	const toggle = useSelector((state) => state.toggleReducer.toggleCounter);
 	const myInput = useSelector((state) => state.InputReducer.myInput);
 
@@ -14,12 +15,12 @@ function App() {
 
 	return (
 		<>
-			<div className="container parent-div ">
+			<div className="container d-flex flex-column parent-div ">
 				<h1 className="p-3 m-5">REDUX COURSE</h1>
 				{toggle ? (
 					<>
 						<h2>Counter: {counter}</h2>
-						<div className="d-flex gap-2 bg-light m-5">
+						<div className="d-flex flex-column   gap-2 bg-light m-5">
 							<button
 								className="btn btn-primary"
 								onClick={() => dispatch({ type: "INCREMENT", payload: 1 })}
@@ -38,6 +39,10 @@ function App() {
 							>
 								DECREMENT -
 							</button>
+							<div>
+								<h3>{myInput} </h3>
+								<input value={myInput} onChange={changeMyInputValue} />
+							</div>
 						</div>
 					</>
 				) : (
@@ -50,10 +55,6 @@ function App() {
 				>
 					HIDE / SHOW COUNTER
 				</button>
-				<div className="text-center p-3 m-5">
-					<h3>{myInput} </h3>
-					<input value={myInput} onChange={changeMyInputValue} />
-				</div>
 			</div>
 		</>
 	);
