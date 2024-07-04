@@ -1,6 +1,35 @@
 body {
 	margin: 0;
-	font-family: "poppins";
+	font-family: "Poppins",
+		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	height: 100vh;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+}
+.buttonsWrapper {
+	display: flex;
+	gap: 1rem;
+}
+
+.counterWrapper {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+.row {
+	gap: 2rem;
+	width: 100%;
 }
